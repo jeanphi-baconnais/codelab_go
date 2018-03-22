@@ -1,4 +1,4 @@
-package codelab_go
+package main
 
 import "fmt"
 
