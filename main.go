@@ -1,21 +1,25 @@
 package main
 
 import (
+	"fmt"
+	"html"
+	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
-func handler (w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
-	w.Write([]byte(`{"message" : "hello world!"}`))
-}
-
-func handler_test (w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("content-type", "application/json")
-	w.Write([]byte(`{"message" : "test : hello world!"}`))
-}
-
 func main() {
-	http.HandleFunc("/", handler)
-	http.HandleFunc("/test", handler_test)
-	http.ListenAndServe(":8888", nil)
+	router := mux.NewRouter().StrictSlash(true)
+	router.HandleFunc("/", Index)
+	router.HandleFunc("/test", Test)
+	log.Fatal(http.ListenAndServe(":8888", router))
+}
+
+func Index(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+}
+
+func Test(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "New route , %q", html.EscapeString(r.URL.Path))
 }
