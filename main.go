@@ -1,22 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"os"
+	"net/http"
 )
 
+func handler (w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
+	w.Write([]byte(`{"message" : "hello world!"}`))
+}
+
+func handler_test (w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("content-type", "application/json")
+	w.Write([]byte(`{"message" : "test : hello world!"}`))
+}
+
 func main() {
-	var message string    	// manual type déclaration
-
-	// var args []string
-	args := os.Args 		// type inference
-
-	if len(args) > 1 {
-		message = args[1]
-	} else {
-		message = "Texte par défaut"
-	}
-
-	fmt.Printf(message)
-
+	http.HandleFunc("/", handler)
+	http.HandleFunc("/test", handler_test)
+	http.ListenAndServe(":8888", nil)
 }
