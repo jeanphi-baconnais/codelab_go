@@ -12,6 +12,8 @@ Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtA
 
 - Exercice 1 : Hello World
 
-- Exercice 2 : API Rest
+- Exercice 1 : Hello World avec gestion arguments / boucle if 
+
+- Exercice 3 : API Rest
 
 A suivre ...
