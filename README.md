@@ -2,9 +2,9 @@
 
 ## Description
 
-Faire ses premiers pas en Go avec ce Codelab de 3 heures, mélangeant explications et exercices.
-Chaque exercice sera contenu dans une branche Git, permettant ainsi de repartir sur un nouvel 
-exercice avec la solution du précedent TP.
+Faire ses premiers pas en Go avec ce Codelab de 3 heures, mélangeant 
+explications et exercices. Chaque exercice sera contenu dans une branche Git, permettant 
+ainsi de repartir sur un nouvel exercice avec la solution du précedent TP.
 
 Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtApUKMLoycWzZoVwPlMHIUgsc8v5Y-DrBPHODzg/
 
@@ -16,4 +16,8 @@ Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtA
 
 - Exercice 3 : API Rest
 
-A suivre ...
+- Exercice 4 : Goroutine / channel
+
+- Exercice 5 : Defer
+
+- Exercice 6 : Tests
