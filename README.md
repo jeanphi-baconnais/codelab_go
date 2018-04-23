@@ -12,6 +12,12 @@ Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtA
 
 - Exercice 1 : Hello World
 
-- Exercice 2 : API Rest
+- Exercice 1 : Hello World avec gestion arguments / boucle if
 
-A suivre ...
+- Exercice 3 : API Rest
+
+- Exercice 4 : Goroutine / channel
+
+- Exercice 5 : Defer
+
+- Exercice 6 : Tests
