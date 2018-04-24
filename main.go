@@ -1,24 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"html"
 	"log"
 	"net/http"
-	"github.com/gorilla/mux"
+	"strconv"
 )
 
 func main() {
-	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/", Index)
-	router.HandleFunc("/test", Test)
-	log.Fatal(http.ListenAndServe(":8888", router))
-}
+	// Goroutine / channel
+	max := 35
 
-func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+	for i := 0; i < max; i++ {
+		callApiRest(i)
+	}
 }
-
-func Test(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "New route , %q", html.EscapeString(r.URL.Path))
+func callApiRest(value int) {
+	url := "http://localhost:9999/generate/" +strconv.Itoa(value)
+	log.Printf("Call : %s", url)
+	http.Get(url)
+	log.Printf("Call finished : %s", url)
 }
