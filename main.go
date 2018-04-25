@@ -8,7 +8,7 @@ func main() {
 
 type person struct {
 	name string
-	age  *int
+	age  int
 }
 
 func Sum (x int, y int) int {
@@ -25,9 +25,11 @@ func ReturnValeurAndValuesMutlipliees(x int, y int) (int, int) {
 }
 
 // Création d'une personne
-func CreatePersonne(name string, age *int) person {
-	if age == nil {
-		return person{name}
+func CreatePersonne(name string, age int) person {
+	if age == 0 {
+		return person{name, nil}
+	} else {
+		return person{name, nil}
 	}
 
 }

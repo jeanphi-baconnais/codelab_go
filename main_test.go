@@ -34,7 +34,7 @@ func TestCreatePersonne(t *testing.T) {
 	personne := CreatePersonne("test", 20)
 	assert.Equal(t, personne.name, "test", "not equals")
 
-
-	personneNoAge := CreatePersonne("test", nil)
-	assert.Equal(t, personneNoAge.age, "test", "not equals")
+	personneNoAge := CreatePersonne("test", 0)
+	assert.Equal(t, personneNoAge.name, "test", "not equals")
+	assert.Nil(t, personneNoAge.age, "not nil")
 }
