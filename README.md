@@ -2,17 +2,20 @@
 
 ## Description
 
-Faire ses premiers pas en Go avec ce Codelab de 3 heures, mélangeant explications et exercices.
-Chaque exercice sera contenu dans une branche Git, permettant ainsi de repartir sur un nouvel 
-exercice avec la solution du précedent TP.
+Faire ses premiers pas en Go avec ce Codelab de 3 heures, mélangeant 
+explications et exercices. Chaque exercice sera contenu dans une branche Git, permettant 
+ainsi de repartir sur un nouvel exercice avec la solution du précedent TP.
 
 Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtApUKMLoycWzZoVwPlMHIUgsc8v5Y-DrBPHODzg/
+
+## Pré requis 
+Suivre la doc d'install sur https://golang.org/doc/install
 
 ## Exercices
 
 - Exercice 1 : Hello World
 
-- Exercice 1 : Hello World avec gestion arguments / boucle if
+- Exercice 2 : Hello World avec gestion arguments / boucle if
 
 - Exercice 3 : API Rest
 
