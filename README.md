@@ -8,6 +8,14 @@ ainsi de repartir sur un nouvel exercice avec la solution du précedent TP.
 
 Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtApUKMLoycWzZoVwPlMHIUgsc8v5Y-DrBPHODzg/
 
+Doc d'install Go : https://golang.org/doc/install
+
+
+## Pré requis
+
+Avoir Git installé.
+
+
 ## Exercices
 
 - Exercice 1 : Hello World
