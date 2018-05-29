@@ -10,11 +10,9 @@ Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtA
 
 Doc d'install Go : https://golang.org/doc/install
 
-
 ## Pré requis
 
 Avoir Git installé.
-
 
 ## Exercices
 
