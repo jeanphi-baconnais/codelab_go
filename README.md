@@ -1,24 +1,32 @@
-# Codelab Go
+# DevFest 2018 : Avoir la tete dans les étoiles avec le Go
 
 ## Description
 
-Faire ses premiers pas en Go avec ce Codelab de 3 heures, mélangeant 
-explications et exercices. Chaque exercice sera contenu dans une branche Git, permettant 
-ainsi de repartir sur un nouvel exercice avec la solution du précedent TP.
+Si le Go vous parait être à des années lumières de votre vie de tous les jours, ou si vous en avez 
+seulement entendu parler, venez profitez de ce code lab de 2h qui permettra d'avoir un mélange 
+de théorie, de présentation de code et surtout de la pratique via plusieurs exercices.
 
-Le slide est dispo à cette url : https://docs.google.com/presentation/d/1q_IqtApUKMLoycWzZoVwPlMHIUgsc8v5Y-DrBPHODzg/
+Nous partirons d'un simple "Hello world" et nous établirons une API REST, tout en passant par 
+des goroutines, des librairies diverses, des tests  et si le temps nous permet, d'intégrer une BDD mongo.
 
-Doc d'install Go : https://golang.org/doc/install
+### Pré requis
 
-## Pré requis
+- Avoir intellij ou goland d'installé
 
-Avoir Git installé.
+https://www.jetbrains.com/idea/download/
+
+https://www.jetbrains.com/go/
+
+- Git
+
+- Mongo (en bonus) : https://www.mongodb.com/download-center#community
+
 
 ## Exercices
 
 - Exercice 1 : Hello World
 
-- Exercice 1 : Hello World avec gestion arguments / boucle if 
+- Exercice 2 : Hello World avec gestion arguments / boucle if / gestion d'erreur
 
 - Exercice 3 : API Rest
 
@@ -27,3 +35,5 @@ Avoir Git installé.
 - Exercice 5 : Defer
 
 - Exercice 6 : Tests
+
+- Exercice 7 : Intégration client Mongo
