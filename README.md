@@ -2,6 +2,7 @@
 
 ## Description
 
+
 Si le Go vous parait être à des années lumières de votre vie de tous les jours, ou si vous en avez 
 seulement entendu parler, venez profitez de ce code lab de 2h qui permettra d'avoir un mélange 
 de théorie, de présentation de code et surtout de la pratique via plusieurs exercices.
