@@ -25,7 +25,7 @@ func main() {
 	fmt.Println("\nExercice 7 : ")
 
 	fmt.Println("\tConnexion à la base mongo : ", mongodb_serveur, ":", mongodb_serveur_port, "/", mongodb_database)
-	Connect();
+	Connect()
 
 	fmt.Println("\tServeur démarré sur le port ", portAPI)
 	router := mux.NewRouter().StrictSlash(true)

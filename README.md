@@ -21,7 +21,6 @@ https://www.jetbrains.com/go/
 
 - Mongo (en bonus) : https://www.mongodb.com/download-center#community
 
-
 ## Exercices
 
 - Exercice 1 : Hello World
